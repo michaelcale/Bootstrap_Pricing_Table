@@ -1,0 +1,138 @@
+<div class="row">
+    <div class="col-md-3 col-md-offset-1">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                    <h3 class="text-center">Personal Plan</h3>
+                <div class="text-center"><h5>Get Started</h5>
+                </div>
+            </div>
+            <div class="panel-body text-center">
+                    <p class="lead" style="font-size:30px"><strong>$xx/month</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-star"></span> One Feature
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-star"></span> Another Feature
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-envelope"></span> This Thing
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-calendar"></span> Another Thing
+                    </li>
+                <li class="list-group-item">
+                            <span class="glyphicon glyphicon-heart"></span> General Awesomeness
+                    </li>
+            </ul>
+            <div class="panel-footer text-center">
+            <form action='subscribe.php' method="post">
+            <script
+                src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<?php echo PMT_PUBLICKEY; ?>"
+                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                data-name="Your Company Name"
+                data-description="Personal Plan ($xx per month)"
+                data-panel-label="Subscribe"
+                data-label="Subscribe"
+                data-amount="0000"
+                data-allow-remember-me="false">
+          </script>
+            <input type="hidden" name='planid' value="yourplanid"></input>
+        </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                    <h3 class="text-center">Premium Plan</h3>
+                <div class="text-danger text-center"><h4>*** Most Popular ***</h4>
+                </div>
+            </div>
+            <div class="panel-body text-center">
+                    <p class="lead" style="font-size:30px"><strong>$xx/month</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-star"></span> One Feature
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-star"></span> Another Feature
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-envelope"></span> This Thing
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-calendar"></span> Another Thing
+                    </li>
+                <li class="list-group-item">
+                            <span class="glyphicon glyphicon-heart"></span> General Awesomeness
+                    </li>
+            </ul>
+            <div class="panel-footer text-center">
+            <form action='subscribe.php' method="post">
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="<?php echo PMT_PUBLICKEY; ?>"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-name="Your Company Name"
+                    data-description="Premium Plan ($xx per month)"
+                    data-panel-label="Subscribe"
+                    data-label="Subscribe"
+                    data-amount="0000"
+                    data-allow-remember-me="false"> 
+              </script>
+                <input type="hidden" name='planid' value="yourplanid"></input>
+            </form>            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                    <h3 class="text-center">Professional Plan</h3>
+                <div class="text-center"><h5>Best Value</h5>
+                </div>
+            </div>
+            <div class="panel-body text-center">
+                    <p class="lead" style="font-size:30px"><strong>$63/month</strong></p>
+            </div>
+            <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-star"></span> One Feature
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-star"></span> Another Feature
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-envelope"></span> This Thing
+                    </li>
+                    <li class="list-group-item">
+                            <span class="glyphicon glyphicon-calendar"></span> Another Thing
+                    </li>
+                <li class="list-group-item">
+                            <span class="glyphicon glyphicon-heart"></span> General Awesomeness
+                    </li>
+            </ul>
+            <div class="panel-footer text-center">
+            <form action='subscribe.php' method="post">
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="<?php echo PMT_PUBLICKEY; ?>"
+                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                    data-name="Your Company Name"
+                    data-description="Professional Plan ($xx per month)"
+                    data-panel-label="Subscribe"
+                    data-label="Subscribe"
+                    data-amount="0000"
+                    data-allow-remember-me="false"> 
+              </script>
+                <input type="hidden" name='planid' value="yourplanid"></input>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
